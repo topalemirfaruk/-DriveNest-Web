@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DriveNest - Gizlilik Politikası</title>
+    <title>DriveNest - Privacy Policy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -36,7 +36,7 @@
                 <i data-lucide="cloud" class="w-5 h-5 text-indigo-400"></i>
                 <span class="font-bold text-white tracking-tight">DriveNest</span>
             </a>
-            <div class="text-sm font-medium text-gray-400">Gizlilik Politikası</div>
+            <div class="text-sm font-medium text-gray-400">Privacy Policy</div>
         </div>
     </nav>
 
@@ -44,40 +44,40 @@
     <main class="max-w-3xl mx-auto px-6 py-16">
         <div class="glass-container rounded-3xl p-8 md:p-12 shadow-2xl">
             <div class="prose max-w-none">
-                <h1 class="!mt-0">Gizlilik Politikası</h1>
-                <p><strong>Son Güncelleme:</strong> 18 Mart 2026</p>
+                <h1 class="!mt-0">Privacy Policy</h1>
+                <p><strong>Last Updated:</strong> March 18, 2026</p>
 
-                <p>DriveNest ("uygulama", "biz"), kullanıcılarının gizliliğine ve veri güvenliğine olağanüstü derecede önem veren açık kaynaklı bir bulut depolama istemcisidir. Bu evrak, masaüstü uygulamasını kullandığınızda hangi verilerin işlendiğini ve bunların nasıl korunduğunu açıklamaktadır.</p>
+                <p>DriveNest ("application", "we"), is an open-source cloud storage client that places extreme importance on user privacy and data security. This document explains what data is processed and how it is protected when you use the desktop application.</p>
 
-                <h2>1. Toplanan ve İşlenen Veriler</h2>
-                <p>DriveNest, doğrudan Google API'leri ile yerel cihazınız arasında bağlantı kurar. Verileriniz asla tarafımızca barındırılan bir sunucuya gitmez.</p>
+                <h2>1. Data Collected and Processed</h2>
+                <p>DriveNest establishes a connection directly between Google APIs and your local device. Your data never goes to a server hosted by us.</p>
                 <ul>
-                    <li><strong>Google Hesap Verileri (OAuth2):</strong> Uygulama üzerinden giriş yapabilmeniz ve profil e-posta adresinizi görebilmeniz için istenir.</li>
-                    <li><strong>Google Drive Dosyaları:</strong> Dosyalarınızı listelemek, indirmek, yüklemek veya silmek (çöp kutusuna atmak) gibi temel işlemleriniz için kullanılır. İçerikleriniz harici bir yapay zeka veya telemetri servisiyle ASLA paylaşılmaz.</li>
+                    <li><strong>Google Account Data (OAuth2):</strong> Requested so you can log in through the application and see your profile email address.</li>
+                    <li><strong>Google Drive Files:</strong> Used for core operations such as listing, downloading, uploading, or deleting (moving to trash) your files. Your content is NEVER shared with an external AI or telemetry service.</li>
                 </ul>
 
-                <h2>2. Veri Depolama ve Şifreleme</h2>
-                <p>Geliştirdiğimiz mimari "Önce Gizlilik" ilkesine dayanır:</p>
+                <h2>2. Data Storage and Encryption</h2>
+                <p>The architecture we developed is based on the "Privacy First" principle:</p>
                 <ul>
-                    <li><strong>Erişim Jetonları (Tokens):</strong> Google API jetonlarınız, Linux "libsecret" (Keytar üzerinden keyring), Windows "Credential Vault" veya macOS "Keychain" içinde donanımsal destekli olarak şifrelenmiş halde saklanır.</li>
-                    <li><strong>Yerel Ön Bellek (SQLite):</strong> Dosya ağacı yapınızın hızlı yüklenmesi için kullandığımız SQLite veritabanı, sadece o anki oturumdaki meta verileri tutar. Çıkış yaptığınız an tüm oturum bilgileri yok edilir.</li>
+                    <li><strong>Access Tokens:</strong> Your Google API tokens are stored encrypted with hardware support in Linux "libsecret" (keyring via Keytar), Windows "Credential Vault", or macOS "Keychain".</li>
+                    <li><strong>Local Cache (SQLite):</strong> The SQLite database we use for fast loading of your file tree structure only holds metadata from the current session. All session information is destroyed the moment you log out.</li>
                 </ul>
 
-                <h2>3. Üçüncü Taraf Paylaşımı</h2>
-                <p><strong>Hiçbir şart altında</strong> kişisel verileriniz, dosya geçmişiniz veya kimlik bilgileriniz üçüncü tüzel kişilerle/şirketlerle, reklam ağlarıyla veya veri toplayıcılarıyla paylaşılmaz, kiralanamaz veya satılamaz. Açık kaynak kodlarumız bu garantinin kanıtıdır.</p>
+                <h2>3. Third Party Sharing</h2>
+                <p><strong>Under no circumstances</strong> will your personal data, file history, or identity information be shared, leased, or sold to third-party legal entities/companies, advertising networks, or data collectors. Our open-source code is proof of this guarantee.</p>
 
-                <h2>4. Kullanıcı Denetimi</h2>
-                <p>Uygulamanın çalışması için verdiğiniz tüm izinleri, dilediğiniz zaman resmi Google Hesabınızın "Üçüncü taraf uygulamalarına erişim" paneli üzerinden tek tuşla kalıcı olarak silebilirsiniz.</p>
+                <h2>4. User Control</h2>
+                <p>You can permanently delete all permissions you have granted for the application to function with a single click at any time via your official Google Account's "Third-party apps with account access" panel.</p>
 
-                <h2>5. Bize Ulaşın</h2>
-                <p>Bu politika veya veri güvenliği yaklaşımlarımız ile ilgili şüpheleriniz ya da önerileriniz varsa, GitHub Depomuz ("DriveNest") üzerinden "İssue" oluşturarak bizimle dilediğiniz an iletişime geçebilirsiniz.</p>
+                <h2>5. Contact Us</h2>
+                <p>If you have any doubts or suggestions regarding this policy or our data security approaches, you can contact us at any time by creating an "Issue" through our GitHub Repository ("DriveNest").</p>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
     <footer class="mt-12 pb-12 text-center text-sm text-gray-500">
-        &copy; 2026 DriveNest Açık Kaynak Projesi.<br/>Bu belge Google OAuth Doğrulama standartları (Verification Standards) gereğince oluşturulmuştur.
+        &copy; 2026 DriveNest Open Source Project.<br/>This document has been created in accordance with Google OAuth Verification Standards.
     </footer>
 
     <script>lucide.createIcons();</script>
